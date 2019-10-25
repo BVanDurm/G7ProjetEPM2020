@@ -1,19 +1,30 @@
 package be.heh.usecase;
 
-public class AddHourlyEmployee {
+import be.heh.entity.*;
+
+public class AddHourlyEmployee extends AddEmployee {
     private int empId;
     private String name;
     private String address;
-    private double salary;
+    private double hrly_rate;
 
-    public AddHourlyEmployee(int empId, String name, String address, double salary){
-        this.empId = empId;
-        this.name = name;
-        this.address = address;
-        this.salary = salary;
+    public AddHourlyEmployee(int empId, String name, String address, double hrly_rate){
+        super(empId,name,address);
+        this.hrly_rate = hrly_rate;
     }
 
-    public void execute() {
-        System.out.println("Execute hourly");
+    @Override
+    protected PaymentSchedule makePaymentSchedule() {
+        return new WeeklyPaymentSchedule();
+    }
+
+    @Override
+    protected PaymentClassification makePaymentClassification() {
+        return new HourlyClassification(hrly_rate);
+    }
+
+    @Override
+    protected PaymentMethod makePaymentMethod() {
+        return new MailMethod("toto@gmail.com");
     }
 }

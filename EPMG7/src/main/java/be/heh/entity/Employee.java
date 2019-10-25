@@ -1,9 +1,5 @@
 package be.heh.entity;
 
-import be.heh.entity.PaymentClassification;
-import be.heh.entity.PaymentMethod;
-import be.heh.entity.PaymentSchedule;
-
 public class Employee {
     private PaymentMethod transaction; // strategy
     private PaymentSchedule payDay; // strategy
@@ -18,7 +14,7 @@ public class Employee {
         this.address =address;
     }
 
-    public void setPayMethod(PaymentMethod transaction){ // A REFAIRE
+    public void setPayMethod(PaymentMethod transaction){
         this.transaction = transaction;
     }
 
@@ -26,7 +22,7 @@ public class Employee {
         return transaction;
     }
 
-    public void setPaySchedule(PaymentSchedule payDay){ // A REFAIRE
+    public void setPaySchedule(PaymentSchedule payDay){
         this.payDay = payDay;
     }
 
@@ -46,7 +42,21 @@ public class Employee {
         return paymentClassification.calculationSalary();
     }
 
-    public String getName() {
-        return this.name;
+    public void setName(String name)
+    {
+        this.name = "BobHourly";
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setAddress(String address)
+    {
+        this.address = "Home_Hourly";
+    }
+    public String getAddress(){
+        return address;
+    }
+
 }

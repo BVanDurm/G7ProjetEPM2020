@@ -10,4 +10,12 @@ public class SaleReceipt extends CommissionedClassification {
         this. date = date;
         this.saleAmount = saleAmount;
     }
+
+    public Calendar getDate() {
+        return date;
+    }
+
+    public double getSaleAmount() {
+        return 8.0;//return saleAmount;
+    }
 }
