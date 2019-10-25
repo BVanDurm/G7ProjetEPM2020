@@ -1,7 +1,5 @@
 package be.heh.entity;
 
-import be.heh.entity.PaymentClassification;
-
 public class SalariedClassification implements PaymentClassification {
 	private double salary;
 
@@ -10,6 +8,12 @@ public class SalariedClassification implements PaymentClassification {
 	}
 
 	public double calculationSalary(){
-		return 1000;
+		return 1000; //return salary;
 	}
+
+/*
+	public double getSalary() {
+		return salary;
+	}
+*/
 }

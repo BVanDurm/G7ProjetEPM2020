@@ -1,19 +1,31 @@
 package be.heh.usecase;
 
-public class AddSalariedEmployee extends addGatewayEmployee {
+import be.heh.entity.*;
+
+public class AddSalariedEmployee extends AddEmployee {
     private int empId;
     private String name;
     private String address;
-    private double salary;
+    private double mlty_slry;
 
-    public AddSalariedEmployee(int empId, String name, String address, double salary){
-        this.empId = empId;
-        this.name = name;
-        this.address = address;
-        this.salary = salary;
+    public AddSalariedEmployee(int empId, String name, String address, double mlty_slry){
+        super(empId,name,address);
+        this.mlty_slry = mlty_slry;
     }
 
-    public void execute() {
-        System.out.println("Execute salaried");
+
+    @Override
+    protected PaymentSchedule makePaymentSchedule() {
+        return new MonthlyPaymentySchedule();
+    }
+
+    @Override
+    protected PaymentClassification makePaymentClassification() {
+        return new SalariedClassification(mlty_slry);
+    }
+
+    @Override
+    protected PaymentMethod makePaymentMethod() {
+        return new MailMethod("toto@gmail.com");
     }
 }

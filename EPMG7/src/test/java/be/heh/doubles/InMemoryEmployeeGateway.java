@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class InMemoryEmployeeGateway implements EmployeeGateway {
-    private Map<Integer, Employee> employees = new HashMap();
+    private Map<Integer, Employee> employees = new HashMap<>();
 
     @Override
     public Employee getEmployee(int empId) {

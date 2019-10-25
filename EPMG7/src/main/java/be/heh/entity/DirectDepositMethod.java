@@ -1,7 +1,5 @@
 package be.heh.entity;
 
-import be.heh.entity.PaymentMethod;
-
 public class DirectDepositMethod implements PaymentMethod {
     public String BICaccount;
     public String bank;

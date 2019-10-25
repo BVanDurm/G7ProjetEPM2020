@@ -27,7 +27,7 @@ public class TestEmployee {
 
         Assert.assertEquals(1000.0,employee.calculatePay(),0.01);
 
-        PaymentSchedule ps = employee.getPaySchedule(); //refaire celui là
+        PaymentSchedule ps = employee.getPaySchedule();
         assertTrue(ps instanceof MonthlyPaymentySchedule);
 
         PaymentMethod pm = employee.getPayMethod();
@@ -56,6 +56,4 @@ public class TestEmployee {
         Assert.assertEquals("mail : toto@gmail.com",pm.toString());
 
     }
-
-
 }

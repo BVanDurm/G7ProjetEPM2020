@@ -1,12 +1,13 @@
 package be.heh.entity;
 
-import be.heh.entity.PaymentClassification;
-import be.heh.entity.TimeCard;
+import java.util.Calendar;
+import java.util.HashMap;
 
 public class HourlyClassification implements PaymentClassification {
 	private double hoursSalary;
 	private double salary;
-	//private HashMap <Calendar, double> listTimeCard;
+	private HashMap<Calendar, TimeCard> listTimeCard = new HashMap<>();
+
 
 	public HourlyClassification(double hoursSalary){
 		this.hoursSalary = hoursSalary;
@@ -16,7 +17,17 @@ public class HourlyClassification implements PaymentClassification {
 		return 380;
 	}
 
-	public void addTimeCard(TimeCard timeCard) {
-
+	public double getHoursSalary() {
+		return hoursSalary;
 	}
+
+	public void addTimeCard(TimeCard timeCard) {
+		listTimeCard.put(timeCard.getDate(), timeCard);
+	}
+
+	public TimeCard getTimeCard(Calendar date){
+		return listTimeCard.get(date);
+	}
+
+
 }
