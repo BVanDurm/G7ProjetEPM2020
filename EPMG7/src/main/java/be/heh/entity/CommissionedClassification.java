@@ -10,6 +10,9 @@ public class CommissionedClassification implements PaymentClassification {
 	/*private HashMap<Calendar, SaleReceipt> listSaleReceipt;*/
 	HashMap<Calendar, SaleReceipt> listSaleReceipt = new HashMap<>();
 
+	public CommissionedClassification(double salary, double commission) {
+	}
+
 	public double calculationSalary(){
 		return 25;
 	}

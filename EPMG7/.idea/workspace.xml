@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edfc23c1-b26f-4b92-94bb-df17d9e5b066" name="Default Changelist" comment="" />
+    <list default="true" id="edfc23c1-b26f-4b92-94bb-df17d9e5b066" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../EPMG7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../EPMG7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/heh/usecase/ChangeMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/heh/usecase/ChangeMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/heh/entity/TestSaleReceipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/heh/entity/TestSaleReceipt.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +48,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/be/heh" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Bureau/Payroll-master/src/main/java/payroll/transactions/ChangeMailTransaction.java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
