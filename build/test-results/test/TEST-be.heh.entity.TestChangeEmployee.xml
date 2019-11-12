@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="be.heh.entity.TestChangeEmployee" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-11-12T10:05:22" hostname="DESKTOP-GCGP857" time="0.098">
+  <properties/>
+  <testcase name="ChangeAddress" classname="be.heh.entity.TestChangeEmployee" time="0.029"/>
+  <testcase name="ChangeName" classname="be.heh.entity.TestChangeEmployee" time="0.004"/>
+  <testcase name="ChangeToMail" classname="be.heh.entity.TestChangeEmployee" time="0.015"/>
+  <testcase name="ChangeToCommission" classname="be.heh.entity.TestChangeEmployee" time="0.011"/>
+  <testcase name="ChangeToDirect" classname="be.heh.entity.TestChangeEmployee" time="0.002"/>
+  <testcase name="ChangeToHourly" classname="be.heh.entity.TestChangeEmployee" time="0.019"/>
+  <testcase name="ChangeToSalaried" classname="be.heh.entity.TestChangeEmployee" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
